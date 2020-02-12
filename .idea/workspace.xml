@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7eddef27-bff6-4357-a8aa-5e38acbb52e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/GlobalConstantsRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GlobalConstantsRegex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/property/message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/property/message_ua_UA.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message_ua_UA.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InputInformation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/TextConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TextConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GlobalConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messageEN.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messageUA.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GlobalConstantsRegex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GlobalConstantsRegex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/TextConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/TextConstants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/ViewEN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/ViewUA.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581421520758</updated>
       <workItem from="1581421525045" duration="9070000" />
-      <workItem from="1581516699058" duration="6358000" />
+      <workItem from="1581516699058" duration="9378000" />
     </task>
     <servers />
   </component>

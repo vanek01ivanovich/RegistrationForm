@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 public class View implements TextConstants {
 
-    ResourceBundle bundle;
+    public static ResourceBundle bundle;
 
 
 
@@ -27,9 +27,9 @@ public class View implements TextConstants {
        System.out.println(message);
    }
 
-   public void printBundleMessage(){
+   public void printBundleMessage(String message){
 
-       System.out.println(bundle.getString(INPUT_NAME));
+       System.out.println(bundle.getString(message));
    }
 
 

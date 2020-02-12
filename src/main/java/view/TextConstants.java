@@ -5,4 +5,7 @@ public interface TextConstants {
     String wrongEngUkrInput = "Невірний ввод! Введіть будь ласка 1 або 0 / Wrong input! Input please 1 or 0 : ";
     String BUNDLE_NAME = "message";
     String INPUT_NAME = "input.name";
+    String INPUT_SURNAME = "input.surname";
+    String INPUT_NICKNAME = "input.nickname";
+    String INPUT_WRONG = "input.wrong";
 }

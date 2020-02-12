@@ -10,7 +10,7 @@ public class Controller implements GlobalConstantsRegex {
     private Model model;
     private View view;
     private String input;
-    private int chooseLanguage;
+
 
     public Controller(View view, Model model) {
 
@@ -26,7 +26,8 @@ public class Controller implements GlobalConstantsRegex {
 
         view.languageChoice(checkIntValueForLanguage(scanner));
 
-
+        UserInfo userInfo = new UserInfo(view,scanner);
+        userInfo.inputInformation();
 
 
 
