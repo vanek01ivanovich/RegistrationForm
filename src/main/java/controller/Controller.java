@@ -5,7 +5,7 @@ import view.View;
 
 import java.util.Scanner;
 
-public class Controller implements GlobalConstants {
+public class Controller implements GlobalConstantsRegex {
 
     private Model model;
     private View view;
@@ -20,6 +20,9 @@ public class Controller implements GlobalConstants {
 
     public void processUser(){
         Scanner scanner = new Scanner(System.in);
+
+
+
 
 
         view.printMessage(View.INPUT_SURNMANE);
@@ -37,7 +40,6 @@ public class Controller implements GlobalConstants {
             view.printMessage(View.WRONG_INPUT_SURNAME);
             this.input = scanner.nextLine();
         }
-
 
     }
 
