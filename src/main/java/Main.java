@@ -1,12 +1,12 @@
 import controller.Controller;
-import model.Model;
+import model.entity.NoteBook;
 import view.View;
 
 public class Main {
     public static void main(String[] args) {
-        Model model = new Model();
+        NoteBook noteBook = new NoteBook();
         View view = new View();
-        Controller controller = new Controller(view,model);
+        Controller controller = new Controller(view, noteBook);
 
         controller.processUser();
     }

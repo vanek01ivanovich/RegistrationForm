@@ -1,21 +1,21 @@
 package controller;
 
-import model.Model;
+import model.entity.NoteBook;
 import view.View;
 
 import java.util.Scanner;
 
 public class Controller implements GlobalConstantsRegex {
 
-    private Model model;
+    private NoteBook noteBook;
     private View view;
     private String input;
 
 
-    public Controller(View view, Model model) {
+    public Controller(View view, NoteBook noteBook) {
 
         this.view = view;
-        this.model = model;
+        this.noteBook = noteBook;
 
     }
 
@@ -28,18 +28,6 @@ public class Controller implements GlobalConstantsRegex {
 
         UserInfo userInfo = new UserInfo(view,scanner);
         userInfo.inputInformation();
-
-
-
-
-
-
-
-        /*view.printMessage(View.INPUT_SURNMANE);
-        checkForValue(scanner,surname);
-
-        view.printMessage(View.INPUT_LOGIN);
-        checkForValue(scanner,nickname);*/
 
     }
 
@@ -57,7 +45,7 @@ public class Controller implements GlobalConstantsRegex {
 
 
 
-    private void checkForValue(Scanner scanner,String form){
+   /* private void checkForValue(Scanner scanner,String form){
         this.input = scanner.nextLine();
 
         while (!(input.matches(form))){
@@ -65,7 +53,7 @@ public class Controller implements GlobalConstantsRegex {
             this.input = scanner.nextLine();
         }
 
-    }
+    }*/
 
 
 }

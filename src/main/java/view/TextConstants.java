@@ -7,5 +7,10 @@ public interface TextConstants {
     String INPUT_NAME = "input.name";
     String INPUT_SURNAME = "input.surname";
     String INPUT_NICKNAME = "input.nickname";
+    String INPUT_PHONE_NUMBER = "input.phone.number";
+    String INPUT_HOME_PHONE_NUMBER = "input.home.phone.number";
+    String INPUT_EMAIL = "input.email";
+    String INPUT_INDEX = "input.index";
+    String INPUT_CSHF = "input.city.street.house.flat";
     String INPUT_WRONG = "input.wrong";
 }
