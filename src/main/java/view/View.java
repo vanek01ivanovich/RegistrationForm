@@ -3,7 +3,9 @@ package view;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class View {
+public class View implements TextConstants {
+
+    ResourceBundle bundle;
 
 
 
@@ -25,5 +27,17 @@ public class View {
        System.out.println(message);
    }
 
+   public void printBundleMessage(){
 
+       System.out.println(bundle.getString(INPUT_NAME));
+   }
+
+
+   public void languageChoice(int checkIntValueForLanguage) {
+        if (checkIntValueForLanguage == 1){
+            bundle = ResourceBundle.getBundle(BUNDLE_NAME,new Locale("ua","UA"));
+        }else {
+            bundle = ResourceBundle.getBundle(BUNDLE_NAME,Locale.ENGLISH);
+        }
+   }
 }

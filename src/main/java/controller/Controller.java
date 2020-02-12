@@ -10,6 +10,7 @@ public class Controller implements GlobalConstantsRegex {
     private Model model;
     private View view;
     private String input;
+    private int chooseLanguage;
 
     public Controller(View view, Model model) {
 
@@ -19,25 +20,47 @@ public class Controller implements GlobalConstantsRegex {
     }
 
     public void processUser(){
+
         Scanner scanner = new Scanner(System.in);
+        view.printMessage(View.urkEngInput);
+
+        view.languageChoice(checkIntValueForLanguage(scanner));
 
 
 
 
 
-        view.printMessage(View.INPUT_SURNMANE);
+
+
+
+
+        /*view.printMessage(View.INPUT_SURNMANE);
         checkForValue(scanner,surname);
 
         view.printMessage(View.INPUT_LOGIN);
-        checkForValue(scanner,nickname);
+        checkForValue(scanner,nickname);*/
 
     }
+
+    private int checkIntValueForLanguage(Scanner scanner) {
+        this.input = scanner.nextLine();
+
+        while (!(input.equals("1") || input.equals("0"))){
+            view.printMessage(View.wrongEngUkrInput);
+            this.input = scanner.nextLine();
+        }
+
+        return Integer.parseInt(input);
+
+    }
+
+
 
     private void checkForValue(Scanner scanner,String form){
         this.input = scanner.nextLine();
 
         while (!(input.matches(form))){
-            view.printMessage(View.WRONG_INPUT_SURNAME);
+            //view.printMessage(View.WRONG_INPUT_SURNAME);
             this.input = scanner.nextLine();
         }
 
