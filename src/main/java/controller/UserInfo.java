@@ -27,8 +27,7 @@ public class UserInfo implements GlobalConstantsRegex{
         lang = (View.bundle.getLocale().toString()).equals("ua_UA") ? NAME_UKR : NAME_ENG;
         lang1 = (View.bundle.getLocale().toString()).equals("ua_UA")
                 ? CITY_STREET_HIUSE_FLAT_UKR : CITY_STREET_HOUSE_FLAT_ENG;
-
-
+        
         noteBook.setName(checkForCorrectInfo(scanner,lang,View.INPUT_NAME));
         noteBook.setSurname(checkForCorrectInfo(scanner,lang,View.INPUT_SURNAME));
         noteBook.setNickname(checkForCorrectInfo(scanner,NICKNAME,View.INPUT_NICKNAME));
@@ -37,8 +36,7 @@ public class UserInfo implements GlobalConstantsRegex{
         noteBook.setEmail(checkForCorrectInfo(scanner,EMAIL,View.INPUT_EMAIL));
         noteBook.setIndex(checkForCorrectInfo(scanner,INDEX,View.INPUT_INDEX));
         noteBook.setCshf(checkForCorrectInfo(scanner,lang1,View.INPUT_CSHF));
-
-
+        noteBook.setSurnameName();
     }
 
     private String checkForCorrectInfo(Scanner scanner,String languageRegex,String bundleMessage) {

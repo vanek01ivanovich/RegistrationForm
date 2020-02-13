@@ -3,13 +3,13 @@ package model.entity;
 public class NoteBook {
     private String name;
     private String surname;
+    private String surnameName;
     private String nickname;
     private String phoneNumber;
     private String homePhoneNumber;
     private String email;
     private String index;
     private String cshf;
-
 
     public void setName(String name) {
         this.name = name;
@@ -67,5 +67,10 @@ public class NoteBook {
         this.cshf = cshf;
     }
 
-
+    public String getSurnameName() {
+        return surnameName;
+    }
+    public void setSurnameName() {
+        this.surnameName = surname + " " + name.charAt(0) + ".";
+    }
 }
