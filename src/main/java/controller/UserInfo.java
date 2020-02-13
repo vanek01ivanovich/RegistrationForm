@@ -28,38 +28,24 @@ public class UserInfo implements GlobalConstantsRegex{
         lang1 = (View.bundle.getLocale().toString()).equals("ua_UA")
                 ? CITY_STREET_HIUSE_FLAT_UKR : CITY_STREET_HOUSE_FLAT_ENG;
 
-        view.printBundleMessage(View.INPUT_NAME);
-        noteBook.setName(checkForCorrectInfo(scanner,lang));
 
-        view.printBundleMessage(View.INPUT_SURNAME);
-        noteBook.setSurname(checkForCorrectInfo(scanner,lang));
-
-        view.printBundleMessage(View.INPUT_NICKNAME);
-        noteBook.setNickname(checkForCorrectInfo(scanner,NICKNAME));
-
-        view.printBundleMessage(View.INPUT_PHONE_NUMBER);
-        noteBook.setPhoneNumber(checkForCorrectInfo(scanner,PHONE_NUMBER));
-
-
-        view.printBundleMessage(View.INPUT_HOME_PHONE_NUMBER);
-        noteBook.setHomePhoneNumber(checkForCorrectInfo(scanner,HOME_PHONE_NUMBER));
-
-        view.printBundleMessage(View.INPUT_EMAIL);
-        noteBook.setEmail(checkForCorrectInfo(scanner,EMAIL));
-
-
-        view.printBundleMessage(View.INPUT_INDEX);
-        noteBook.setIndex(checkForCorrectInfo(scanner,INDEX));
-
-        view.printBundleMessage(View.INPUT_CSHF);
-        noteBook.setCshf(checkForCorrectInfo(scanner,lang1));
+        noteBook.setName(checkForCorrectInfo(scanner,lang,View.INPUT_NAME));
+        noteBook.setSurname(checkForCorrectInfo(scanner,lang,View.INPUT_SURNAME));
+        noteBook.setNickname(checkForCorrectInfo(scanner,NICKNAME,View.INPUT_NICKNAME));
+        noteBook.setPhoneNumber(checkForCorrectInfo(scanner,PHONE_NUMBER,View.INPUT_PHONE_NUMBER));
+        noteBook.setHomePhoneNumber(checkForCorrectInfo(scanner,HOME_PHONE_NUMBER,View.INPUT_HOME_PHONE_NUMBER));
+        noteBook.setEmail(checkForCorrectInfo(scanner,EMAIL,View.INPUT_EMAIL));
+        noteBook.setIndex(checkForCorrectInfo(scanner,INDEX,View.INPUT_INDEX));
+        noteBook.setCshf(checkForCorrectInfo(scanner,lang1,View.INPUT_CSHF));
 
 
     }
 
-    private String checkForCorrectInfo(Scanner scanner,String languageRegex) {
+    private String checkForCorrectInfo(Scanner scanner,String languageRegex,String bundleMessage) {
+        view.printBundleMessage(bundleMessage);
         while (!(scanner.hasNext() && ( (text = scanner.nextLine()).matches(languageRegex))) ){
             view.printBundleMessage(View.INPUT_WRONG);
+            view.printBundleMessage(bundleMessage);
         }
         return text;
     }

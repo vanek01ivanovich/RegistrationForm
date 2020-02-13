@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7eddef27-bff6-4357-a8aa-5e38acbb52e3" name="Default Changelist" comment="">
+    <list default="true" id="7eddef27-bff6-4357-a8aa-5e38acbb52e3" name="Default Changelist" comment="made setter getter for entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/entity/NoteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/entity/NoteBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Model.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +103,7 @@
       <updated>1581421520758</updated>
       <workItem from="1581421525045" duration="9070000" />
       <workItem from="1581516699058" duration="18011000" />
-      <workItem from="1581588647871" duration="678000" />
+      <workItem from="1581588647871" duration="1198000" />
     </task>
     <servers />
   </component>
@@ -130,5 +132,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made setter getter for entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="made setter getter for entity" />
   </component>
 </project>
