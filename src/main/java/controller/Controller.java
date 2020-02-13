@@ -26,7 +26,7 @@ public class Controller implements GlobalConstantsRegex {
 
         view.languageChoice(checkIntValueForLanguage(scanner));
 
-        UserInfo userInfo = new UserInfo(view,scanner);
+        UserInfo userInfo = new UserInfo(view,scanner,noteBook);
         userInfo.inputInformation();
 
     }
@@ -40,20 +40,5 @@ public class Controller implements GlobalConstantsRegex {
         }
 
         return Integer.parseInt(input);
-
     }
-
-
-
-   /* private void checkForValue(Scanner scanner,String form){
-        this.input = scanner.nextLine();
-
-        while (!(input.matches(form))){
-            //view.printMessage(View.WRONG_INPUT_SURNAME);
-            this.input = scanner.nextLine();
-        }
-
-    }*/
-
-
 }
